@@ -26,7 +26,7 @@ npm install
 Then, to process the `.har` file, use the script 'process' with the `.har` file path as the third parameter:
 
 ```bash
-npm run process -- -- /path/to/your/file.har
+npm run process -- /path/to/your/file.har
 ```
 
 For instance, if you have a `.har` file named 'network.har' in the 'data' directory, you would run:
@@ -35,7 +35,25 @@ For instance, if you have a `.har` file named 'network.har' in the 'data' direct
 npm run process -- ./data/network.har
 ```
 
-This will generate a `.csv` file in the current directory with the same name as the `.har` file.
+This will generate a `.csv` file in the current directory with the same name as the `.har` file. It will process all network calls in the `.har` file.
+
+If you would like to filter out to specific (`js`, `css`, `jpg`, etc.) files, you can add a fourth parameter to the command:
+
+```bash
+npm run process -- ./data/network.har 'js,css'
+```
+This will only process network calls that have a file extension of `js` or `css`.
+
+If you would like to filter down to a specific resource type (e.g. `script`, `image`, `stylesheet`, etc.), you can add a fifth parameter to the command:
+
+```bash
+npm run process -- ./data/network.har null 'script'
+```
+This will only process network calls that have resource type of script.  Using this for `image` resource types will be an easy way to get all images, without having to specify all the image extensions.
+
+Note: only one of the fourth or fifth parameters can be used at a time. An error will be thrown if both are used.
+
+
 
 ## Main Dependencies
 
