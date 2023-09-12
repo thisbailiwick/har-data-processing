@@ -33,7 +33,7 @@ For instance, if you have a `.har` file named 'network.har' in the 'data' direct
 npm run process -- ./data/network.har
 ```
 
-This will generate a `.csv` file in the current directory with the same name as the `.har` file. It will process all network calls in the `.har` file.
+This will generate a `.csv` file in the `generated-csv` directory with the same name as the `.har` file. It will process all network calls in the `.har` file.
 
 If you would like to filter out to specific (`js`, `css`, `jpg`, etc.) files, you can add a fourth parameter to the command:
 
