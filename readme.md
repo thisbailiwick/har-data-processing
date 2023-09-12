@@ -13,8 +13,6 @@ The tool extracts and saves the following data for each JavaScript file found:
 - Total Wait and Downloading time
 - Total time
 
-**Note:** This script currently only handles JavaScript files (.js and .mjs).
-
 ## Usage
 
 First, install the dependencies:
