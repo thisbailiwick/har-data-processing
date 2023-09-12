@@ -1,6 +1,6 @@
 # HAR Data Processing
 
-This utility reads a `.har` (HTTP Archive) file, extracts specific data related to JavaScript files, and saves it as a `.csv` file. 
+This utility reads a `.har` (HTTP Archive) file, extracts specific and customizable data, then saves it as a `.csv` file. 
 
 ## Data Saved to CSV
 
