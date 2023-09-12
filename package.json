@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Get specific data frmo a .har file and save that data to a csv.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jasmine tests/tests.js",
     "process": "node index.js"
