@@ -1,0 +1,34 @@
+{
+  "entryFields": [
+    {
+      "title": "URL",
+      "value": "request.url",
+      "type": "entry path"
+    },
+    {
+      "title": "Initiator Stack",
+      "value": "customGetInitiatorStack",
+      "type": "custom function"
+    },
+    {
+      "title": "Wait for server response",
+      "value": "timings.wait",
+      "type": "entry path"
+    },
+    {
+      "title": "Downloading from server",
+      "value": "timings.receive",
+      "type": "entry path"
+    },
+    {
+      "title": "Total Wait and Downloading",
+      "value": "customGetTotalWaitReceive",
+      "type": "custom function"
+    },
+    {
+      "title": "Total Time",
+      "value": "customGetTotalWaitReceive",
+      "type": "entry path"
+    }
+  ]
+}
